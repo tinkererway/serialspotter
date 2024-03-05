@@ -1,0 +1,101 @@
+
+FloatLayout:
+			
+    canvas:
+        Color:
+            rgba: 0, 0.16, 0.211, 1  #002B36
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+	Label:
+		HighlightLabel:
+			markup: True
+			text  : '[color=#839496]!(c) [ref=https://tinkererway.dev/serialspotter]Tinkererway[/ref] . No rights reserved . Made with love in opensource[/color]'
+			size: self.texture_size
+			pos: 5, root.height - self.height - 35
+			on_ref_press:
+				import webbrowser
+				webbrowser.open(args[1])
+				
+    MDLabel:
+        markup: True
+        text:'[color=#46900A]serialspotter[/color][color=#839496]:[/color][color=#3365A3]~[/color][color=#839496]$[/color]'
+        size_hint_y: None
+        size: self.texture_size
+        pos: 5, root.height - self.height - 5
+	
+	MDLabel:
+	    markup: True
+		text:'[color=#3365A3]The following serial ports were found:[/color]\n' 
+		size_hint_y: None
+        size: self.texture_size
+        pos: 5, root.height - self.height - 65
+	
+	MDLabel:
+	    markup: True
+		text:'[color=#839496][size=25sp]---------------------------------------------[/size][/color]'
+		size_hint_y: None
+        size: self.texture_size
+        pos: 5, root.height - self.height - 70
+	
+	MDLabel:
+	    markup: True
+		text:'[color=#839496][size=15sp]Port: Description, Hardware Id, Manufacturer, Serial Number, Product, Interface[/size][/color]'
+		size_hint_y: None
+        size: self.texture_size
+        pos: 5, root.height - self.height - 99
+		
+	MDLabel:
+	    markup: True
+		text:'[color=#839496][size=25sp]---------------------------------------------[/size][/color]'
+		size_hint_y: None
+        size: self.texture_size
+        pos: 5, root.height - self.height - 104
+		
+	MDLabel:
+	    id : ports_list
+	    markup: True
+		text:''
+		size_hint_y: None
+        size: self.texture_size
+        pos: 7, root.height - self.height - 135
+	
+	
+	MDIcon:
+		icon: 'open-source-initiative'
+		theme_text_color: 'Custom'
+		text_color: 0.513, 0.58, 0.58, 1  #839496
+		theme_font_size: "Custom"
+		font_size: "16sp"
+		size: self.texture_size
+		pos_hint: {'center_x': 0.02, 'center_y': 0.02}
+	
+	MDIcon:
+		icon: 'heart'
+		theme_text_color: 'Custom'
+		text_color: 1, 0, 0, 1  # Red color 
+		theme_font_size: "Custom"
+		font_size: "16sp"
+		size: self.texture_size
+		pos_hint: {'center_x': 0.04, 'center_y': 0.02}
+
+		
+		
+			
+	
+		
+	
+	
+		
+
+
+        
+
+	
+	
+
+	
+
+	
+		
