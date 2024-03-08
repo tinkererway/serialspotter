@@ -15,3 +15,7 @@ See the file LICENCE for the licence conditions.
 <br />
 If you encounter any issues or have suggestions for improvements, please feel free to reach out via email at amal[at]tinkererway[dot]com.
 
+### Installing Packages
+Use `pip install -r requirements.txt` to  install packages.
+
+
